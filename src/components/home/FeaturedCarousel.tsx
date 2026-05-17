@@ -43,7 +43,7 @@ export default function FeaturedCarousel() {
         Featured <span className="gradient-text">Ambassador Projects</span>
       </h2>
       <p className="text-[var(--text-muted)] text-lg mb-4">
-        These are some of the key projects I have represented within the Web3 ecosystem.
+        {data.title.featuredCarousel}
       </p>
       <div className="neon-divider mb-0" />
 

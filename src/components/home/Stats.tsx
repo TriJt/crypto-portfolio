@@ -29,7 +29,7 @@ function StatCard({ stat, trigger }: { stat: Stat; trigger: boolean }) {
       <span className="block text-2xl mb-3">{stat.icon}</span>
       <div
         className="font-display font-black leading-none mb-2 text-[var(--cyan)]"
-        style={{ fontSize: "2.5rem", textShadow: "var(--glow-cyan)" }}
+        style={{ fontSize: "2rem", textShadow: "var(--glow-cyan)" }}
       >
         {display()}
       </div>

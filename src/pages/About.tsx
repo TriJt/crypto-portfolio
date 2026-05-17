@@ -46,7 +46,12 @@ function Avatar() {
               background:   "var(--bg3)",
             }}
           >
-            {s.icon}
+                <img
+                src={s.icon}
+                alt={s.username}
+                className="w-6 h-6 object-contain drop-shadow-md"
+                style={{ filter: s.color ? `drop-shadow(0 0 6px ${s.color})` : undefined }}
+              />
           </a>
         ))}
       </div>

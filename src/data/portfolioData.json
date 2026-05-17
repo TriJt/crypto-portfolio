@@ -5,17 +5,21 @@
     "title": "Crypto Ambassador & Community Builder",
     "bio": [
       "With over 2 years in the Web3 ecosystem, I have built and grown dozens of crypto communities in Vietnam — from pioneering DeFi projects to groundbreaking Layer-2 solutions. My passion lies in connecting Vietnamese users with high-quality blockchain projects and promoting the adoption of decentralized finance.",
-      "As a pioneer in organizing AMAs, Twitter Spaces, and offline events in Ho Chi Minh City and Hanoi, I am proud to have introduced thousands of Vietnamese people to Web3 in a safe and effective way. I am not just an ambassador — I am a community architect."
+      "As a pioneer in organizing AMAs, Twitter Spaces, and offline events in Ho Chi Minh City , I am proud to have introduced thousands of Vietnamese people to Web3 in a safe and effective way. I am not just an ambassador — I am a community architect."
     ],
     "avatar": "https://pbs.twimg.com/profile_images/2029543201854697472/MyrSmiDM_400x400.jpg",
     "emoji": "🌐",
     "location": "Ho Chi Minh City, Vietnam"
   },
+  "title":{
+    "communityLink":"Join the Web3 Vietnam community — a place to share knowledge, opportunities, and connections.",
+    "featuredCarousel":"These are some of the key projects I have represented within the Web3 ecosystem."
+  },
   "socials": {
-    "x":        { "username": "@TriACJ1409",     "url": "https://x.com/TriACJ1409",           "icon": "𝕏",  "color": "#e2e8f0", "label": "Twitter / X" },
-    "telegram": { "username": "@TriACJ",          "url": "https://t.me/airdropjohn1409",        "icon": "✈",  "color": "#2AABEE", "label": "Telegram" },
-    "discord":  { "username": "lethanhtri4098",   "url": "https://discord.gg/DSMecF4prx",       "icon": "⊹",  "color": "#5865F2", "label": "Discord" },
-    "linkedin": { "username": "le-thanh-tri",     "url": "https://linkedin.com/",               "icon": "in", "color": "#0A66C2", "label": "LinkedIn" }
+    "x":        { "username": "TriACJ1409",     "url": "https://x.com/TriACJ1409",           "icon": "https://freepnglogo.com/images/all_img/logo-x-modern-2023-7cbd.png",  "color": "#e2e8f0", "label": "Twitter / X" },
+    "telegram": { "username": "TriACJ",          "url": "https://t.me/airdropjohn1409",        "icon": "https://cdn.freebiesupply.com/logos/large/2x/telegram-logo-png-transparent.png",  "color": "#2AABEE", "label": "Telegram" },
+    "discord":  { "username": "lethanhtri4098",   "url": "https://discord.gg/DSMecF4prx",       "icon": "https://cdn.freebiesupply.com/logos/large/2x/discord-logo-png-transparent.png",  "color": "#5865F2", "label": "Discord" },
+    "linkedin": { "username": "le-thanh-tri",     "url": "https://www.linkedin.com/in/l%C3%AA-th%C3%A0nh-tr%C3%AD-20ab94237/",               "icon": "https://cdn.freebiesupply.com/logos/large/2x/linkedin-logo-png-transparent.png", "color": "#0A66C2", "label": "LinkedIn" }
   },
   "stats": [
     { "key": "followers",   "value": 12000, "display": "12000+", "label": "Followers & Members", "icon": "👥" },

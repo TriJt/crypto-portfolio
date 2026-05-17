@@ -9,8 +9,8 @@ export default function CommunityLinks() {
       <h2 className="font-display font-black leading-tight mb-3" style={{ fontSize: "clamp(1.6rem, 4vw, 2.8rem)" }}>
         Join the <span className="gradient-text">Community</span>
       </h2>
-      <p className="text-[var(--text-muted)] text-lg max-w-xl mb-10">
-        Join the Web3 Vietnam community — a place to share knowledge, opportunities, and connections.
+      <p className="text-[var(--text-muted)] text-lg mb-10">
+        {data.title.communityLink}
       </p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
@@ -27,11 +27,18 @@ export default function CommunityLinks() {
             whileHover={{ y: -3 }}
             className="community-card relative overflow-hidden border border-[var(--border)] bg-[var(--bg3)] p-8 text-center transition-all duration-250 hover:border-[rgba(0,184,212,.3)]"
           >
-            <span className="block text-4xl mb-4" style={{ color: s.color }}>{s.icon}</span>
-            <div className="font-display text-[.8rem] font-bold tracking-[.1em] uppercase mb-1">
-              {key.toUpperCase()}
+            <div className="mb-6 flex items-center justify-center">
+              <img
+                src={s.icon}
+                alt={s.username}
+                className="w-16 h-16 object-contain drop-shadow-md"
+                style={{ filter: s.color ? `drop-shadow(0 0 6px ${s.color})` : undefined }}
+              />
             </div>
-            <div className="font-mono text-[.75rem] text-[var(--cyan)]">{s.username}</div>
+            <div className="font-display text-[.8rem] font-bold tracking-[.1em] uppercase mb-1">
+              {s.label.toUpperCase()}
+            </div>
+            <div className="font-mono text-[1rem] text-[var(--cyan)]">{s.username}</div>
           </motion.a>
         ))}
       </div>

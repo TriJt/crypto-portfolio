@@ -21,7 +21,12 @@ export default function Footer() {
             className="w-11 h-11 flex items-center justify-center border border-[var(--border)] bg-[var(--bg3)] text-[var(--text-muted)] text-lg transition-all duration-200 hover:text-[var(--cyan)] hover:border-[var(--cyan)] hover:shadow-[var(--glow-cyan)]"
             style={{ color: s.color, borderColor: `${s.color}33` }}
           >
-            {s.icon}
+             <img
+              src={s.icon}        // ưu tiên s.image, nếu không có thì dùng s.icon cũ
+              alt={s.username}
+              className="w-7 h-7 object-contain"   // điều chỉnh kích thước ảnh phù hợp
+              style={{ filter: s.color ? `drop-shadow(0 0 4px ${s.color})` : undefined }}
+            />
           </a>
         ))}
       </div>

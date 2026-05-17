@@ -6,7 +6,20 @@ import data from "../../data/portfolioData.json";
 
 /* ── Particle generation ── */
 const COLORS  = ["rgba(0,245,255,.6)", "rgba(139,92,246,.6)", "rgba(240,171,252,.6)", "rgba(16,185,129,.6)"];
-const SYMBOLS = ["₿", "Ξ", "◎", "⬡", "◆", "▲", "✦", "⬢"];
+const SYMBOLS = [
+  "₿",      // BTC
+  "Ξ",      // ETH
+  "◎",      // SOL
+  "₳",      // ADA
+  "●",      // DOT
+  "Ð",      // DOGE
+  "Ł",      // LTC
+  "🪙",     // General crypto
+  "⟠",      // ETH alt
+  "⚡",     // Lightning
+  "🚀",     // Moon
+  "⧫"      // Diamond - thường dùng cho NFT/DeFi
+];
 
 interface Particle { id: number; left: number; size: number; dur: number; delay: number; color: string; symbol: string; }
 
@@ -16,7 +29,7 @@ function useParticles(count = 20): Particle[] {
       Array.from({ length: count }, (_, i) => ({
         id:     i,
         left:   Math.random() * 100,
-        size:   Math.random() * 20 + 8,
+        size:   Math.random() * 40 + 8,
         dur:    Math.random() * 15 + 10,
         delay:  Math.random() * 10,
         color:  COLORS[Math.floor(Math.random() * COLORS.length)],
@@ -140,7 +153,12 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 font-mono text-[.75rem] text-[var(--text-muted)] hover:text-[var(--cyan)] transition-colors duration-200"
             >
-              <span className="text-base">{s.icon}</span>
+              <img
+                src={s.icon}
+                alt={s.username}
+                className="w-4 h-4 object-contain drop-shadow-md"
+                style={{ filter: s.color ? `drop-shadow(0 0 6px ${s.color})` : undefined }}
+              />
               {s.username}
             </a>
           ))}
