@@ -1,0 +1,137 @@
+{
+  "personalInfo": {
+    "name": "Trí ACJ",
+    "nameShort": "Trí ACJ",
+    "title": "Crypto Ambassador & Community Builder",
+    "bio": [
+      "With over 2 years in the Web3 ecosystem, I have built and grown dozens of crypto communities in Vietnam — from pioneering DeFi projects to groundbreaking Layer-2 solutions. My passion lies in connecting Vietnamese users with high-quality blockchain projects and promoting the adoption of decentralized finance.",
+      "As a pioneer in organizing AMAs, Twitter Spaces, and offline events in Ho Chi Minh City and Hanoi, I am proud to have introduced thousands of Vietnamese people to Web3 in a safe and effective way. I am not just an ambassador — I am a community architect."
+    ],
+    "avatar": "https://pbs.twimg.com/profile_images/2029543201854697472/MyrSmiDM_400x400.jpg",
+    "emoji": "🌐",
+    "location": "Ho Chi Minh City, Vietnam"
+  },
+  "socials": {
+    "x":        { "username": "@TriACJ1409",     "url": "https://x.com/TriACJ1409",           "icon": "𝕏",  "color": "#e2e8f0", "label": "Twitter / X" },
+    "telegram": { "username": "@TriACJ",          "url": "https://t.me/airdropjohn1409",        "icon": "✈",  "color": "#2AABEE", "label": "Telegram" },
+    "discord":  { "username": "lethanhtri4098",   "url": "https://discord.gg/DSMecF4prx",       "icon": "⊹",  "color": "#5865F2", "label": "Discord" },
+    "linkedin": { "username": "le-thanh-tri",     "url": "https://linkedin.com/",               "icon": "in", "color": "#0A66C2", "label": "LinkedIn" }
+  },
+  "stats": [
+    { "key": "followers",   "value": 12000, "display": "12000+", "label": "Followers & Members", "icon": "👥" },
+    { "key": "projects",    "value": 5,     "display": "5+",    "label": "Projects Joined",      "icon": "🚀" },
+    { "key": "communities", "value": 2,     "display": "2+",    "label": "Communities Built",    "icon": "🌐" },
+    { "key": "events",      "value": 10,    "display": "10+",   "label": "Events Hosted",        "icon": "🎤" }
+  ],
+  "skills": [
+    { "icon": "🏗️", "name": "Community Management", "desc": "Discord / Telegram / X" },
+    { "icon": "✍️", "name": "Content Creation",      "desc": "Threads, Blogs, Edu Series" },
+    { "icon": "🎤", "name": "Event Hosting",          "desc": "AMA, Twitter Space, Meetup" },
+    { "icon": "🌏", "name": "Translation",            "desc": "EN ↔ VI technical documents" },
+    { "icon": "📊", "name": "Growth Strategy",        "desc": "KOL collab, viral campaigns" },
+    { "icon": "🔗", "name": "Web3 Ecosystem",         "desc": "DeFi, NFT, GameFi, L2" },
+    { "icon": "🎨", "name": "Branding & Design",      "desc": "Canva, Figma, basic" },
+    { "icon": "📣", "name": "Marketing Campaigns",    "desc": "Launch, Airdrop, Listing" }
+  ],
+  "timeline": [
+    { "date": "2023",          "title": "Began My Web3 Journey",     "desc": "Discovered Bitcoin and Ethereum, and joined the first Vietnamese crypto communities on Telegram." },
+    { "date": "2024",          "title": "First Ambassador Role",     "desc": "Became an ambassador for my first AI project — Bytenova AI Vietnam Community. Organized my first AMA with 200+ participants." },
+    { "date": "2025",          "title": "Content Creator",     "desc": "Grew my personal Twitter to 10k followers." },
+    { "date": "2025 - Present","title": "Ambassador",    "desc": "Serving as ambassador for 5 projects simultaneously, specializing in AI Agent and infrastructure. Co-organized Vietnam AMA. Lead Angels VietNam of CoinW." }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "CoinW",
+      "emoji": "https://pbs.twimg.com/profile_images/2010016018429792256/ih8PRUwL_400x400.jpg",
+      "projectType": "Centralized Exchange (CEX)",
+      "typeCategory": "CEX",
+      "badgeVariant": "emerald",
+      "role": "Lead Angel",
+      "period": "01/2026 - Present",
+      "activities": [
+        "Create articles and videos about exchange events and features",
+        "Organize community events and engagement activities",
+        "Strengthen interaction with the Vietnamese user base",
+        "Promote platform features and trading campaigns"
+      ],
+      "description": "Leading community growth and engagement for CoinW exchange in Vietnam.",
+      "technologies": ["Twitter", "Telegram", "Discord"],
+      "liveUrl": "https://www.coinw.com"
+    },
+    {
+      "id": 2,
+      "name": "Warden Protocol",
+      "emoji": "https://pbs.twimg.com/profile_images/1904848026742484992/nO3RP237_400x400.jpg",
+      "projectType": "AI Agents",
+      "typeCategory": "AI",
+      "badgeVariant": "violet",
+      "role": "Watcher & Ambassador",
+      "period": "07/2025 - 10/2025",
+      "activities": [
+        "Organized AMA sessions for the Vietnamese community",
+        "Hosted community games (5v5 MOBA, quizzes, poker, price guessing, etc.)",
+        "Provided active support by answering questions and engaging members",
+        "Monitored and handled scammers and FUD within the community",
+        "Created promotional content on X, Telegram, and Discord"
+      ],
+      "description": "Strengthening community trust and engagement as Watcher & Ambassador.",
+      "technologies": ["Discord", "Twitter", "Telegram"],
+      "liveUrl": ""
+    },
+    {
+      "id": 3,
+      "name": "TANSSI Network",
+      "emoji": "https://pbs.twimg.com/profile_images/1874826799311413248/rvV9cqF3_400x400.jpg",
+      "projectType": "Blockchain Network",
+      "typeCategory": "Infrastructure",
+      "badgeVariant": "cyan",
+      "role": "Ambassador",
+      "period": "02/2025 - 12/2025",
+      "activities": [
+        "Created promotional posts and content on X, Telegram, and Discord",
+        "Increased project visibility within the Vietnamese crypto community"
+      ],
+      "description": "Promoting TANSSI Network in the Vietnamese market.",
+      "technologies": ["Twitter", "Telegram", "Discord"],
+      "liveUrl": ""
+    },
+    {
+      "id": 4,
+      "name": "ByteNova AI",
+      "emoji": "https://pbs.twimg.com/profile_images/1899483596269965313/0J-Tffv4_400x400.jpg",
+      "projectType": "AI + Blockchain",
+      "typeCategory": "AI",
+      "badgeVariant": "amber",
+      "role": "Guardian & Vietnamese MOD",
+      "period": "02/2025 - 12/2025",
+      "activities": [
+        "Organized AMA events for the Vietnamese community",
+        "Hosted community games (poker, price guessing, etc.)",
+        "Actively responded to and supported community members",
+        "Monitored and handled scammers and FUD",
+        "Created promotional content across social channels"
+      ],
+      "description": "Community moderation and engagement for ByteNova AI in Vietnam.",
+      "technologies": ["Discord", "Telegram", "Twitter"],
+      "liveUrl": ""
+    },
+    {
+      "id": 5,
+      "name": "AGNT Hub",
+      "emoji": "https://pbs.twimg.com/profile_images/2044801626473422848/6vUpKxy1_400x400.jpg",
+      "projectType": "AI Agent / Web3 Platform",
+      "typeCategory": "AI",
+      "badgeVariant": "pink",
+      "role": "Ambassador",
+      "period": "07/2025 - Present",
+      "activities": [
+        "Created promotional posts and marketing content on X, Telegram, and Discord",
+        "Increased awareness and user adoption in the Vietnamese community"
+      ],
+      "description": "Promoting AGNT Hub and building its presence in Vietnam.",
+      "technologies": ["Twitter", "Telegram", "Discord"],
+      "liveUrl": ""
+    }
+  ]
+}

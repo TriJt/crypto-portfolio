@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────
+   CSS CUSTOM PROPERTIES  (dark cyber theme)
+───────────────────────────────────────────── */
+:root {
+  --cyan:          #00b8d4;
+  --cyan-dim:      #06b6d4;
+  --cyan-dark:     #0e7490;
+  --violet:        #7c3aed;
+  --violet-dim:    #6d28d9;
+  --violet-glow:   #a78bfa;
+  --fuchsia:       #db2777;
+  --fuchsia-bright:#f472b6;
+  --emerald:       #10b981;
+  --emerald-dim:   #059669;
+  --emerald-glow:  #34d399;
+  --pink:          #ec4899;
+
+  /* Backgrounds */
+  --bg:      #030712;
+  --bg2:     #060d1a;
+  --bg3:     #0a1628;
+  --bg4:     #0f1f38;
+  --surface: #111827;
+  --surface2:#1f2937;
+
+  /* Text */
+  --text:      #e2e8f0;
+  --text-dim:  #94a3b8;
+  --text-muted:#475569;
+
+  /* Borders */
+  --border:      #1e3a5f;
+  --border-cyan: rgba(0,184,212,.25);
+
+  /* Glow shadows */
+  --glow-cyan:   0 0 15px rgba(0,184,212,.35), 0 0 35px rgba(0,184,212,.15);
+  --glow-violet: 0 0 15px rgba(124,58,237,.35), 0 0 35px rgba(124,58,237,.15);
+  --glow-pink:   0 0 15px rgba(236,72,153,.35), 0 0 35px rgba(236,72,153,.15);
+
+  /* Fonts */
+  --font-display: 'Orbitron', monospace;
+  --font-body:    'Rajdhani', sans-serif;
+  --font-mono:    'Share Tech Mono', monospace;
+}
+
+/* ─────────────────────────────────────────────
+   BASE RESET
+───────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+html  { scroll-behavior: smooth; }
+body  {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+a     { color: inherit; text-decoration: none; }
+img   { max-width: 100%; }
+
+/* ─────────────────────────────────────────────
+   SCROLLBAR
+───────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--cyan-dim); border-radius: 2px; }
+
+/* ─────────────────────────────────────────────
+   GRADIENT TEXT UTILITY
+───────────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, var(--cyan), var(--violet-glow), var(--fuchsia));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─────────────────────────────────────────────
+   GLITCH EFFECT
+───────────────────────────────────────────── */
+.glitch { position: relative; }
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  background: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.glitch::before {
+  animation: glitch1 3s infinite;
+  clip-path: polygon(0 20%, 100% 20%, 100% 35%, 0 35%);
+}
+.glitch::after {
+  animation: glitch2 3s infinite;
+  clip-path: polygon(0 60%, 100% 60%, 100% 75%, 0 75%);
+}
+@keyframes glitch1 {
+  0%,92%,100% { transform: translate(0); opacity: 0; }
+  93%         { transform: translate(-2px, 1px); opacity: .7; }
+  96%         { transform: translate(2px, -1px); opacity: .7; }
+}
+@keyframes glitch2 {
+  0%,94%,100% { transform: translate(0); opacity: 0; }
+  95%         { transform: translate(2px, -1px); opacity: .6; }
+  98%         { transform: translate(-2px, 1px); opacity: .6; }
+}
+
+/* ─────────────────────────────────────────────
+   FLOATING PARTICLE  (hero background)
+───────────────────────────────────────────── */
+@keyframes float {
+  0%   { transform: translateY(100vh) rotate(0deg);   opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { transform: translateY(-100px) rotate(720deg); opacity: 0; }
+}
+.particle { position: absolute; border-radius: 50%; animation: float linear infinite; }
+
+/* ─────────────────────────────────────────────
+   PULSE BORDER  (hero badge)
+───────────────────────────────────────────── */
+@keyframes pulse-border {
+  0%,100% { border-color: rgba(0,245,255,.3); }
+  50%     { border-color: rgba(0,245,255,.7); box-shadow: var(--glow-cyan); }
+}
+
+/* ─────────────────────────────────────────────
+   BLINK  (green dot)
+───────────────────────────────────────────── */
+@keyframes blink {
+  0%,100% { opacity: 1; }
+  50%     { opacity: .3; }
+}
+
+/* ─────────────────────────────────────────────
+   LOADING BAR
+───────────────────────────────────────────── */
+@keyframes load-bar {
+  from { transform: scaleX(0); transform-origin: left; }
+  to   { transform: scaleX(1); transform-origin: left; }
+}
+.animate-load-bar { animation: load-bar 1.5s ease-in-out forwards; }
+
+/* ─────────────────────────────────────────────
+   PAGE ENTER
+───────────────────────────────────────────── */
+@keyframes page-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page-enter { animation: page-in .4s ease-out; }
+
+/* ─────────────────────────────────────────────
+   NEON DIVIDER
+───────────────────────────────────────────── */
+.neon-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--cyan), var(--violet), transparent);
+  opacity: .4;
+}
+
+/* ─────────────────────────────────────────────
+   GRID BACKGROUND  (fixed overlay)
+───────────────────────────────────────────── */
+.grid-bg {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(0,245,255,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,245,255,.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.grid-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(139,92,246,.08) 0%, transparent 70%);
+}
+
+/* ─────────────────────────────────────────────
+   CRT SCANLINE  (fixed overlay)
+───────────────────────────────────────────── */
+.scanline {
+  position: fixed; inset: 0; z-index: 1; pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 2px,
+    rgba(0,0,0,.03) 2px, rgba(0,0,0,.03) 4px
+  );
+}
+
+/* ─────────────────────────────────────────────
+   PROJECT CARD — scanline reveal on hover
+───────────────────────────────────────────── */
+.card-scanline {
+  position: absolute; inset: 0;
+  opacity: 0; transition: opacity .3s;
+  pointer-events: none; z-index: 2;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 3px,
+    rgba(0,245,255,.02) 3px, rgba(0,245,255,.02) 4px
+  );
+}
+.project-card:hover .card-scanline { opacity: 1; }
+
+/* ─────────────────────────────────────────────
+   CAROUSEL DOT
+───────────────────────────────────────────── */
+.carousel-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--border); transition: all .2s; cursor: pointer;
+}
+.carousel-dot.active {
+  background: var(--cyan);
+  box-shadow: 0 0 6px var(--cyan);
+  width: 16px; border-radius: 3px;
+}
+
+/* ─────────────────────────────────────────────
+   TIMELINE VERTICAL LINE
+───────────────────────────────────────────── */
+.timeline-line {
+  background: linear-gradient(to bottom, var(--cyan), var(--violet), transparent);
+}
+
+/* ─────────────────────────────────────────────
+   COMMUNITY CARD  — bottom bar on hover
+───────────────────────────────────────────── */
+.community-card::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--cyan), var(--violet));
+  transform: scaleX(0); transition: transform .3s;
+}
+.community-card:hover::after { transform: scaleX(1); }
+
+/* ─────────────────────────────────────────────
+   SPIN (avatar ring)
+───────────────────────────────────────────── */
+@keyframes spin-slow    { from { transform: rotate(0deg);   } to { transform: rotate(360deg);  } }
+@keyframes spin-reverse { from { transform: rotate(360deg); } to { transform: rotate(0deg);    } }
+.animate-spin-slow    { animation: spin-slow    20s linear infinite; }
+.animate-spin-reverse { animation: spin-reverse 20s linear infinite; }
+
+/* ─────────────────────────────────────────────
+   FILTER BUTTON ACTIVE STATE
+───────────────────────────────────────────── */
+.filter-btn-active {
+  border-color: rgba(0,184,212,.5) !important;
+  color: var(--cyan) !important;
+  background: rgba(0,184,212,.07) !important;
+}
