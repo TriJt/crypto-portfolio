@@ -137,5 +137,44 @@
       "technologies": ["Twitter", "Telegram", "Discord"],
       "liveUrl": ""
     }
+  ],
+  "post": [
+    {
+      "id": 1,
+      "name": "CoinW",
+      "emoji": "https://pbs.twimg.com/profile_images/2010016018429792256/ih8PRUwL_400x400.jpg",
+      "projectType": "Centralized Exchange (CEX)",
+      "typeCategory": "CEX",
+      "badgeVariant": "emerald",
+      "role": "Lead Angel",
+      "period": "01/2026 - Present",
+      "url": [
+        "https://x.com/TriACJ1409/status/2055197575855382651?s=20",
+        "https://x.com/TriACJ1409/status/2055495289021329728?s=20",
+        "https://x.com/TriACJ1409/status/2045004799675158747?s=20",
+        "https://x.com/TriACJ1409/status/2053855823110267260?s=20",
+        "https://x.com/TriACJ1409/status/2053336883971961222?s=20",
+        "https://x.com/triacj1409/status/2052601941708964112?s=46",
+        "https://x.com/TriACJ1409/status/2041687181077704849?s=20"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Warden Protocol",
+      "emoji": "https://pbs.twimg.com/profile_images/1904848026742484992/nO3RP237_400x400.jpg",
+      "projectType": "AI Agents",
+      "typeCategory": "AI",
+      "badgeVariant": "violet",
+      "role": "Ambassador",
+      "period": "07/2025 - 10/2025",
+      "url": [
+        "https://x.com/TriACJ1409/status/2040686320893501582?s=20",
+        "https://x.com/TriACJ1409/status/1970419569648144422?s=20",
+        "https://x.com/TriACJ1409/status/1966526831533916247?s=20",
+        "https://x.com/TriACJ1409/status/2021788907621560689?s=20",
+        "https://x.com/TriACJ1409/status/2017549911940862109?s=20",
+        "https://x.com/TriACJ1409/status/1978439593470108154?s=20"
+      ]
+    }
   ]
 }

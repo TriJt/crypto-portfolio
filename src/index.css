@@ -258,3 +258,20 @@ img   { max-width: 100%; }
   color: var(--cyan) !important;
   background: rgba(0,184,212,.07) !important;
 }
+
+/* Tweet */
+/* Làm nhỏ text trong Tweet */
+.react-tweet-theme {
+  --tweet-body-font-size: 0.95rem;     /* Nội dung chính */
+  --tweet-font-size: 0.9rem;           /* Text chung */
+  
+  /* Các phần khác nếu muốn nhỏ thêm */
+  --tweet-header-font-size: 0.9rem;    /* Tên + username */
+  --tweet-info-font-size: 0.85rem;     /* Thời gian, metrics */
+  --tweet-action-font-size: 0.85rem;
+}
+
+/* Nếu muốn áp dụng chỉ cho trang Post (không ảnh hưởng toàn site) */
+.post-tweet .react-tweet-theme {
+  --tweet-body-font-size: 0.92rem;
+}

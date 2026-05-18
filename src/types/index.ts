@@ -36,7 +36,7 @@ export interface TimelineEntry {
   desc: string;
 }
 
-export type BadgeVariant = "cyan" | "violet" | "pink" | "emerald" | "amber";
+export type BadgeVariant = "cyan" | "violet" | "pink" | "emerald" | "amber" | "blue" | string;
 
 export interface Project {
   id: number;
@@ -51,6 +51,21 @@ export interface Project {
   description: string;
   technologies: string[];
   liveUrl: string;
+}
+
+export interface Post {
+  id: number;
+  name: string;
+  emoji: string;
+  projectType: string;
+  typeCategory: string;
+  badgeVariant: BadgeVariant;     // ← Sửa ở đây
+  role: string;
+  period: string;
+  url: string[];                  // mảng link X
+  description?: string;
+  technologies?: string[];
+  liveUrl?: string;
 }
 
 export interface PortfolioData {

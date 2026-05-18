@@ -1,19 +1,19 @@
 import data from "../../data/portfolioData.json";
 
 interface FilterBarProps {
+  categories: string[];
   active: string;
   onChange: (type: string) => void;
+  item: any;
 }
 
-export default function FilterBar({ active, onChange }: FilterBarProps) {
-  // Derive unique categories from data
-  const categories = ["all", ...Array.from(new Set(data.projects.map((p) => p.typeCategory)))];
+export default function FilterBar({categories,  active, onChange, item }: FilterBarProps) {
 
   return (
     <div className="flex gap-3 flex-wrap mt-6 mb-8">
       {categories.map((cat) => {
         const isActive = active === cat;
-        const count = cat === "all" ? data.projects.length : data.projects.filter((p) => p.typeCategory === cat).length;
+        const count = cat === "all" ? item.length : item.filter((p:any) => p.typeCategory === cat).length;
 
         return (
           <button

@@ -14,6 +14,11 @@ export default function Projects() {
     (p) => activeFilter === "all" || p.typeCategory === activeFilter
   );
 
+    // Derive unique categories from data
+  const categoriesProject = ["all", ...Array.from(new Set(data.projects.map((p) => p.typeCategory)))];
+
+  const itemProject = data.projects;
+
   return (
     <SectionWrapper>
       <section className="max-w-6xl mx-auto px-6 py-20">
@@ -27,7 +32,7 @@ export default function Projects() {
           <span className="text-[var(--cyan)]">{data.projects.length} projects</span> in the Web3 ecosystem.
         </p>
 
-        <FilterBar active={activeFilter} onChange={setActiveFilter} />
+        <FilterBar categories={categoriesProject} active={activeFilter} onChange={setActiveFilter} item={itemProject}/>
 
         <motion.div
           layout

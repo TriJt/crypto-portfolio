@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { to: "/",         label: "Home"     },
   { to: "/projects", label: "Projects" },
   { to: "/about",    label: "About"    },
+  { to: "/post",    label: "Post"    },
 ];
 
 const WALLETS = ["MetaMask 🦊", "WalletConnect 🔵", "Coinbase Wallet 🔷", "Phantom 👻"];
