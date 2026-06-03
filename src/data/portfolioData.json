@@ -63,8 +63,24 @@
       "technologies": ["Twitter", "Telegram", "Discord"],
       "liveUrl": "https://www.coinw.com"
     },
-    {
+        {
       "id": 2,
+      "name": "Midnight",
+      "emoji": "https://pbs.twimg.com/profile_images/1707073625214582784/MsMpvtzV_400x400.jpg",
+      "projectType": "Privacy",
+      "typeCategory": "Privacy",
+      "badgeVariant": "violet",
+      "role": "Ambassador",
+      "period": "04/2026 - Present",
+      "activities": [
+        "Created promotional content on X, Telegram, and Discord"
+      ],
+      "description": "Strengthening community trust and engagement Ambassador.",
+      "technologies": ["Discord", "Twitter", "Telegram"],
+      "liveUrl": ""
+    },
+    {
+      "id": 3,
       "name": "Warden Protocol",
       "emoji": "https://pbs.twimg.com/profile_images/1904848026742484992/nO3RP237_400x400.jpg",
       "projectType": "AI Agents",
@@ -84,7 +100,7 @@
       "liveUrl": ""
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "TANSSI Network",
       "emoji": "https://pbs.twimg.com/profile_images/1874826799311413248/rvV9cqF3_400x400.jpg",
       "projectType": "Blockchain Network",
@@ -101,7 +117,7 @@
       "liveUrl": ""
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "ByteNova AI",
       "emoji": "https://pbs.twimg.com/profile_images/1899483596269965313/0J-Tffv4_400x400.jpg",
       "projectType": "AI + Blockchain",
@@ -121,7 +137,7 @@
       "liveUrl": ""
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "AGNT Hub",
       "emoji": "https://pbs.twimg.com/profile_images/2044801626473422848/6vUpKxy1_400x400.jpg",
       "projectType": "AI Agent / Web3 Platform",
@@ -155,7 +171,14 @@
         "https://x.com/TriACJ1409/status/2053855823110267260?s=20",
         "https://x.com/TriACJ1409/status/2053336883971961222?s=20",
         "https://x.com/triacj1409/status/2052601941708964112?s=46",
-        "https://x.com/TriACJ1409/status/2041687181077704849?s=20"
+        "https://x.com/TriACJ1409/status/2041687181077704849?s=20",
+        "https://x.com/TriACJ1409/status/2061600056483123466?s=20",
+        "https://x.com/TriACJ1409/status/2060922792472965251?s=20",
+        "https://x.com/TriACJ1409/status/2061600056483123466?s=20",
+        "https://x.com/TriACJ1409/status/2061027570284667166?s=20",
+        "https://x.com/TriACJ1409/status/2060122526618185765?s=20",
+        "https://x.com/TriACJ1409/status/2057820068432736751?s=20",
+        "https://x.com/TriACJ1409/status/2058919694439256252?s=20"
       ]
     },
     {
@@ -174,6 +197,67 @@
         "https://x.com/TriACJ1409/status/2021788907621560689?s=20",
         "https://x.com/TriACJ1409/status/2017549911940862109?s=20",
         "https://x.com/TriACJ1409/status/1978439593470108154?s=20"
+      ]
+    },
+        {
+      "id": 3,
+      "name": "TANSSI Network",
+      "emoji": "https://pbs.twimg.com/profile_images/1874826799311413248/rvV9cqF3_400x400.jpg",
+      "projectType": "Layer 1",
+      "typeCategory": "Layer 1",
+      "badgeVariant": "cyan",
+      "role": "Ambassador",
+      "period": "07/2025 - 10/2025",
+      "url": [
+        "https://x.com/TriACJ1409/status/1932447540408172990?s=20",
+        "https://x.com/TriACJ1409/status/1928020144519008769?s=20",
+        "https://x.com/TriACJ1409/status/1926948335958536336?s=20",
+        "https://x.com/TriACJ1409/status/1926671885929976251?s=20",
+        "https://x.com/TriACJ1409/status/1925483673073459441?s=20",
+        "https://x.com/TriACJ1409/status/1923759837709729980?s=20"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "ByteNova AI",
+      "emoji": "https://pbs.twimg.com/profile_images/1899483596269965313/0J-Tffv4_400x400.jpg",
+      "projectType": "AI Agents",
+      "typeCategory": "AI Agents",
+      "badgeVariant": "cyan",
+      "role": "Ambassador",
+      "period": "07/2025 - 10/2025",
+      "url": [
+        "https://x.com/TriACJ1409/status/1973580716807168302?s=20",
+        "https://x.com/TriACJ1409/status/1961467118282809651?s=20",
+        "https://x.com/TriACJ1409/status/1961378783036149971?s=20",
+        "https://x.com/TriACJ1409/status/1960192196063396270?s=20"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "SUI",
+      "emoji": "https://pbs.twimg.com/profile_images/2032112116870881280/YEdzcZNw_400x400.jpg",
+      "projectType": "Layer 1",
+      "typeCategory": "Layer 1",
+      "badgeVariant": "cyan",
+      "role": "Ambassador",
+      "period": "07/2025 - 10/2025",
+      "url": [
+        "https://x.com/TriACJ1409/status/2060210093119975818?s=20",
+        "https://x.com/TriACJ1409/status/2058083453061808231?s=20"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Other",
+      "emoji": "https://pbs.twimg.com/profile_images/2007888211834482689/QUSn9XGy_400x400.png",
+      "projectType": "RWA",
+      "typeCategory": "RWA",
+      "badgeVariant": "cyan",
+      "role": "Ambassador",
+      "period": "07/2025 - 10/2025",
+      "url": [
+        "https://x.com/TriACJ1409/status/2059072703672508632?s=20"
       ]
     }
   ]
